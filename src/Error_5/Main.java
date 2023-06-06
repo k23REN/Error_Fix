@@ -8,14 +8,5 @@ public class Main {
     }
 }
 
-class A {
-    public void print() {
-        System.out.println("Class A");
-    }
-}
 
-class B {
-    public void print() {
-        System.out.println("Class B");
-    }
-}
+
