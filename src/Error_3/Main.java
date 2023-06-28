@@ -1,8 +1,20 @@
 package Error_3;
-
+import java.util.Optional;
 public class Main {
+	/*
     public static void main(String[] args) {
         String message = null;//このコードは修正禁止
+        int length = 0;
+        if (message != null) {
+            length = message.length();
+        }
+        System.out.println("Message length: " + length);
+    }
+    */
+
+    public static void main(String[] args) {
+        String message = null;//このコードは修正禁止
+        Optional<String>str = Optional.ofNullable(message);
         int length = 0;
         if (message != null) {
             length = message.length();
