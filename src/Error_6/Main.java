@@ -7,6 +7,12 @@ public class Main {
     }
 
     public static int calculateDivision(int dividend, int divisor) {
-        return dividend / divisor;
+    	try {
+    		return dividend / divisor;
+    	}catch(Exception error){
+    		System.out.println("Error：" + error.getMessage());
+    		return 0;
+    	}
+
     }
 }
