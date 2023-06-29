@@ -15,13 +15,9 @@ public class Main {
         numbers.add(4);
         numbers.add(5);
 
-        int sum = numbers.reduce(0, (a, b) -> {
-            if (b % 2 == 0) {
-                return a + b;
-            } else {
-                return a;
-            }
-        }); // ラムダ式が正しく実装されていません
+        int sum = numbers.stream()
+                .filter(n -> n % 2 == 0)
+                .reduce(0, Integer::sum);
 
         System.out.println("Sum: " + sum);
     }
