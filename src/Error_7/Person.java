@@ -10,6 +10,6 @@ public class Person {
     }
 
     public String toString() {
-        return toString();
+        return "Name: " + this.name +", Age:" + this.age;
     }
 }
