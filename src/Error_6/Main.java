@@ -10,7 +10,7 @@ public class Main {
         try {
             return dividend / divisor;
         } catch (ArithmeticException e) {
-            System.out.println("Error: Division by zero");
+            System.out.println("Error: " + e.getMessage());
             return 0;
         }
     }
