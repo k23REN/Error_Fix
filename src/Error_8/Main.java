@@ -22,3 +22,5 @@ public class Main {
         System.out.println(doubledNumbers);
     }
 }
+/*問題1では、numbersリストの要素をストリームに変換し、
+ * map()メソッドを使用して各要素を2倍に変換しています。*/

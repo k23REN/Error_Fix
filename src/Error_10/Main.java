@@ -22,3 +22,7 @@ public class Main {
         System.out.println("Sum: " + sum);
     }
 }
+/*問題3では、numbersリストの要素をストリームに変換し、
+ * filter()メソッドを使用して偶数の要素を選択し、
+ * reduce()メソッドを使用して合計値を計算しています。
+ */

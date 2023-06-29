@@ -23,3 +23,6 @@ public class Main {
         System.out.println(uppercaseStrings);
     }
 }
+
+/*問題2では、stringsリストの要素をストリームに変換し、
+ * map()メソッドを使用して各要素を大文字に変換しています。*/
