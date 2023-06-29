@@ -16,9 +16,10 @@ public class Main {
         String message = null;//このコードは修正禁止
         Optional<String>str = Optional.ofNullable(message);
         int length = 0;
-        if (message != null) {
-            length = message.length();
+        if (str.isPresent() == true) {
+            length = str.get().length();
         }
+
         System.out.println("Message length: " + length);
     }
 }
