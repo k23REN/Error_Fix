@@ -14,14 +14,17 @@ public class Main {
         numbers.add(3);
         numbers.add(4);
         numbers.add(5);
+        numbers.add(8);
 
-        int sum = numbers.reduce(0, (a, b) -> {
-            if (b % 2 == 0) {
-                return a + b;
-            } else {
-                return a;
-            }
-        }); // ラムダ式が正しく実装されていません
+
+		//偶数の要素を合計を作成
+		//①偶数の場合のみ取得する
+		//②合計をする
+        Integer sum = numbers.stream()
+        		//偶数を抽出
+        		.filter(n -> n % 2 == 0)
+        		//合計する
+        		.reduce(0, Integer::sum); // ラムダ式が正しく実装されていません
 
         System.out.println("Sum: " + sum);
     }
